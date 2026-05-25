@@ -1,6 +1,0 @@
-<odoo noupdate="1">
-  <record id="allergen_penicillin" model="pharmacy.allergen"><field name="name">Penicillin</field></record>
-  <record id="allergen_aspirin" model="pharmacy.allergen"><field name="name">Aspirin</field></record>
-  <record id="drug_class_antibiotic" model="pharmacy.drug.class"><field name="name">Antibiotic</field></record>
-  <record id="drug_class_analgesic" model="pharmacy.drug.class"><field name="name">Analgesic</field></record>
-</odoo>
