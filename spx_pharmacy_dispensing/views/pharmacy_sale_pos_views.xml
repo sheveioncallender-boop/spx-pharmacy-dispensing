@@ -1,0 +1,4 @@
+<odoo>
+  <record id="view_sale_order_pharmacy_form" model="ir.ui.view"><field name="name">sale.order.pharmacy.form</field><field name="model">sale.order</field><field name="inherit_id" ref="sale.view_order_form"/><field name="arch" type="xml"><xpath expr="//field[@name='partner_id']" position="after"><field name="pharmacy_prescription_id"/></xpath></field></record>
+  <record id="view_pos_order_pharmacy_form" model="ir.ui.view"><field name="name">pos.order.pharmacy.form</field><field name="model">pos.order</field><field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/><field name="arch" type="xml"><xpath expr="//field[@name='partner_id']" position="after"><field name="pharmacy_prescription_id"/><field name="pharmacy_patient_id"/></xpath></field></record>
+</odoo>
