@@ -1,0 +1,18 @@
+<odoo>
+  <menuitem id="menu_pharmacy_root" name="Pharmacy" sequence="10" groups="spx_pharmacy_dispensing.group_pharmacy_user"/>
+  <menuitem id="menu_pharmacy_dashboard" name="Dashboard" parent="menu_pharmacy_root" action="action_pharmacy_dashboard" sequence="1"/>
+  <menuitem id="menu_pharmacy_patients" name="Patients" parent="menu_pharmacy_root" action="action_pharmacy_patient" sequence="5"/>
+  <menuitem id="menu_pharmacy_prescriptions" name="Prescriptions" parent="menu_pharmacy_root" action="action_pharmacy_prescription" sequence="10"/>
+  <menuitem id="menu_pharmacy_dispensing" name="Dispensing" parent="menu_pharmacy_root" action="action_pharmacy_dispensing_log" sequence="15"/>
+  <menuitem id="menu_pharmacy_registers" name="Registers" parent="menu_pharmacy_root" sequence="20"/>
+  <menuitem id="menu_pharmacy_antibiotic_register" name="Antibiotics" parent="menu_pharmacy_registers" action="action_pharmacy_register_antibiotic"/>
+  <menuitem id="menu_pharmacy_controlled_register" name="Controlled Drugs" parent="menu_pharmacy_registers" action="action_pharmacy_register_controlled"/>
+  <menuitem id="menu_pharmacy_narcotic_register" name="Narcotics" parent="menu_pharmacy_registers" action="action_pharmacy_register_narcotic"/>
+  <menuitem id="menu_pharmacy_reports" name="Reports" parent="menu_pharmacy_root" sequence="30"/>
+  <menuitem id="menu_pharmacy_alerts" name="Safety Alerts" parent="menu_pharmacy_reports" action="action_pharmacy_alert"/>
+  <menuitem id="menu_pharmacy_audit" name="Audit Trail" parent="menu_pharmacy_reports" action="action_pharmacy_audit"/>
+  <menuitem id="menu_pharmacy_config" name="Configuration" parent="menu_pharmacy_root" sequence="50" groups="spx_pharmacy_dispensing.group_pharmacy_manager"/>
+  <menuitem id="menu_pharmacy_allergens" name="Allergies" parent="menu_pharmacy_config" action="action_pharmacy_allergen"/>
+  <menuitem id="menu_pharmacy_drug_classes" name="Drug Classes" parent="menu_pharmacy_config" action="action_pharmacy_drug_class"/>
+  <menuitem id="menu_pharmacy_interactions" name="Drug Interactions" parent="menu_pharmacy_config" action="action_pharmacy_interaction"/>
+</odoo>
