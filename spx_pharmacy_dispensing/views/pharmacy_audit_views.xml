@@ -1,0 +1,5 @@
+<odoo>
+  <record id="view_pharmacy_audit_tree" model="ir.ui.view"><field name="name">pharmacy.audit.entry.tree</field><field name="model">pharmacy.audit.entry</field><field name="arch" type="xml"><list><field name="create_date"/><field name="name"/><field name="user_id"/><field name="action_type"/><field name="model_name"/><field name="res_id"/><field name="reason"/></list></field></record>
+  <record id="view_pharmacy_audit_form" model="ir.ui.view"><field name="name">pharmacy.audit.entry.form</field><field name="model">pharmacy.audit.entry</field><field name="arch" type="xml"><form><sheet><group><field name="name"/><field name="user_id"/><field name="action_type"/><field name="model_name"/><field name="res_id"/><field name="reason"/></group></sheet></form></field></record>
+  <record id="action_pharmacy_audit" model="ir.actions.act_window"><field name="name">Audit Trail</field><field name="res_model">pharmacy.audit.entry</field><field name="view_mode">list,form</field></record>
+</odoo>
