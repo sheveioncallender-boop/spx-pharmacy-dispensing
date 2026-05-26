@@ -1,5 +1,0 @@
-<odoo noupdate="1">
-  <record id="seq_pharmacy_patient" model="ir.sequence"><field name="name">Pharmacy Patient</field><field name="code">pharmacy.patient</field><field name="prefix">PT/%(year)s/</field><field name="padding">5</field></record>
-  <record id="seq_pharmacy_prescription" model="ir.sequence"><field name="name">Pharmacy Prescription</field><field name="code">pharmacy.prescription</field><field name="prefix">RX/%(year)s/</field><field name="padding">6</field></record>
-  <record id="seq_pharmacy_dispensing_log" model="ir.sequence"><field name="name">Pharmacy Dispensing Log</field><field name="code">pharmacy.dispensing.log</field><field name="prefix">DSP/%(year)s/</field><field name="padding">6</field></record>
-</odoo>
