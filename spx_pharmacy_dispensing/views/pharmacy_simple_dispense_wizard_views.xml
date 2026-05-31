@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_pharmacy_simple_dispense_wizard_form" model="ir.ui.view">
+        <field name="name">pharmacy.dispense.wizard.safe.simple.form</field>
+        <field name="model">pharmacy.dispense.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Dispense Prescription">
+                <sheet>
+                    <group>
+                        <field name="prescription_id" readonly="1"/>
+                        <field name="patient_id" readonly="1"/>
+                        <field name="pharmacist_initials" required="1"/>
+                    </group>
+                    <group>
+                        <field name="notes" placeholder="Optional dispensing notes..."/>
+                    </group>
+                    <div class="alert alert-info" role="alert">
+                        Review the prescription medication lines on the prescription before confirming.
+                        When confirmed, the system will dispense the remaining quantities and create the dispensing log.
+                    </div>
+                </sheet>
+                <footer>
+                    <button name="action_confirm_dispense" string="Confirm Dispense" type="object" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pharmacy_simple_dispense_wizard" model="ir.actions.act_window">
+        <field name="name">Dispense Prescription</field>
+        <field name="res_model">pharmacy.dispense.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_pharmacy_simple_dispense_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
