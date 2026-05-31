@@ -1,4 +1,0 @@
-<odoo>
-  <record id="view_pharmacy_dashboard_client" model="ir.ui.view"><field name="name">pharmacy.dashboard.client</field><field name="model">ir.ui.view</field><field name="arch" type="xml"><form string="Pharmacy Dashboard"><sheet><h1>SPXCORP Pharmacy Dashboard</h1><p>Use the Pharmacy menu to manage Patients, Prescriptions, Dispensing, Registers, Reports and Configuration.</p></sheet></form></field></record>
-  <record id="action_pharmacy_dashboard" model="ir.actions.act_window"><field name="name">Pharmacy Dashboard</field><field name="res_model">pharmacy.prescription</field><field name="view_mode">kanban,list,form</field><field name="context">{'search_default_draft': 1}</field></record>
-</odoo>
